@@ -9,11 +9,7 @@
 - view: expensive_pdt
   
   derived_table:
-    sql: SELECT DISTINCT t1.character_set_name as name
-        FROM INFORMATION_SCHEMA.COLLATIONS AS t1,
-             INFORMATION_SCHEMA.COLLATIONS AS t2,
-             INFORMATION_SCHEMA.COLLATIONS AS t3,
-             INFORMATION_SCHEMA.COLLATIONS AS t4;
+    sql: SELECT SLEEP(300);
     sql_trigger_if: 'SELECT 1'
     indexes: name
 
