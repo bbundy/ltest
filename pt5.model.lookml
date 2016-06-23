@@ -9,7 +9,7 @@
 - view: expensive_pdt
   
   derived_table:
-    sql: SELECT SLEEP(300);
+    sql: SELECT SLEEP(300), 'sleepy' as name
     sql_trigger_if: 'SELECT 1'
     indexes: name
 
