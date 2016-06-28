@@ -10,7 +10,7 @@
   
   derived_table:
     sql: SELECT SLEEP(300), 'sleepy' as name
-    sql_trigger_if: 'SELECT 1'
+    sql_trigger_if: 'SELECT 0'
     indexes: name
 
   fields:
